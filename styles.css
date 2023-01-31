@@ -1,34 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #181D31;
+}
+
+header a {
+    text-decoration: none;
+    color: #F0E9D2;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+main {
+    background-color: #678983;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
 .calculator {
     width: 400px;
-    margin: 0 auto;
     text-align: center;
-  }
+    background-color: #E6DDC4;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow : 5px 10px 0.5em 0.5em #181D31;
+}
   
-  .display {
-    height: 50px;
+.display {
+    height: 80px;
     font-size: 36px;
-    background-color: #ddd;
-    margin: 20px 0;
+    background-color: rgb(207, 207, 207);
+    margin: 20px;
     padding: 10px;
-  }
+    border-radius: 5px;
+    border: 1.5px solid #181D31;
+}
   
-  .buttons {
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     padding: 20px;
-  }
+}
   
-  button {
-    background-color: #fff;
-    border: 1px solid #333;
+button {
+    background-color: #F0E9D2;
+    border: 1.5px solid #181D31;
     padding: 20px;
     font-size: 24px;
-  }
-  
+    transition: background-color 0.5s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #678983;
+}
+
+.clear {
+    background-color: #678983;
+    color: #F0E9D2;
+}
+
+.clear:hover {
+    background-color: #F0E9D2;
+    color: black;
+}
+
+footer p {
+    color: #F0E9D2;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: #E6DDC4;
+    font-size: 1.5em;
+}
+
+footer a:hover {
+    color: #678983;
+    font-size: 2em;
+}
